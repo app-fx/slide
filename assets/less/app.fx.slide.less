@@ -1,0 +1,27 @@
+@import "slide.less";
+
+.fx-slide {
+	position: absolute;
+	-webkit-transition: -webkit-transform 3.5s ease, opacity 3.5s ease;
+	-moz-transition: -moz-transform 3.5s ease, opacity 3.5s ease;
+	-ms-transition: transform 3.5s ease, opacity 3.5s ease;
+	-o-transition: transform 3.5s ease, opacity 3.5s ease;
+	transition: transform 3.5s ease, opacity 3.5s ease;
+}
+
+.fx-slide-left {
+	.slide(100%, 0);
+}
+
+.fx-slide-right {
+	.slide(-100%, 0);
+}
+
+.fx-slide-up {
+	.slide(0, -100%);
+}
+
+.fx-slide-down {
+	.slide(0, 100%);
+}
+
