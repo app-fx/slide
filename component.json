@@ -1,16 +1,17 @@
 {
-	"name": "app.ui.component",
-	"version": "0.1.0",
-	"description": "APP UI: Component",
+	"name": "app.fx.slide",
+	"version": "0.0.0",
+	"description": "APP FX: Slide",
 	"license": "MIT",
 	"main": "index.html",
 	"keywords": [
-			"app-ui", "web-components"
+			"app-fx", "web-components"
 	],
 	"ignore": [
 			"**/.*",
 			"node_modules",
-			"bower_components"
+			"bower_components",
+			"components"
 	],
 	"dependencies": {
 		"webcomponentsjs": "*",
