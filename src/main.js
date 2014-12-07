@@ -1,3 +1,4 @@
+/*
 (function() {
 	// Creates an object based in the HTML Element prototype
 	var el = Object.create(HTMLElement.prototype);
@@ -30,3 +31,4 @@
 		prototype: el
 	});
 }());
+*/
