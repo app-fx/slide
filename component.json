@@ -5,13 +5,13 @@
 	"license": "MIT",
 	"main": "index.html",
 	"keywords": [
-			"app-fx", "web-components"
+		"slide", "app-fx", "web-components"
 	],
 	"ignore": [
-			"**/.*",
-			"node_modules",
-			"bower_components",
-			"components"
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"components"
 	],
 	"dependencies": {
 		"webcomponentsjs": "*",
