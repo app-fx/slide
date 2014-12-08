@@ -42,7 +42,7 @@
 		}
 	};
 
-	document.registerElement('fx-zoom', {
+	document.registerElement('fx-slide', {
 		prototype: el,
 		extends: 'div'
 	});
