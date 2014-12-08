@@ -16,7 +16,89 @@
 </head>
 <body>
 
-	<!-- Custom Element -->
+
+	<!-- Importing Custom Elements -->
+	<link rel="import" href="../index.html">
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.main {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.one {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(http://placekitten.com/g/1024/768);
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+
+		.two {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(http://placekitten.com/1024/768);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		button {
+			position: absolute;
+			top: 0;
+			padding: 12px;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- Custom Element -->
+<div class="main" >
+	<div is="fx-zoom" class="one" state="slide-left"></div>
+	<div is="fx-zoom" class="two"></div>
+</div>
+
+
+<button>Random Slide</button>
+
+
+
+<script>
+	var directions = ["left", "right", "up", "down"];
+	//
+	$("button").click(function(){
+		var state, action;
+		//random direction
+		var direction = directions[ Math.round( Math.random() * 3  ) ];
+		// one
+		// get existing attribute
+		state = $(".one").attr("state");
+		action = ( state && state.indexOf("slide-") > -1 ) ? "" : "slide-"+direction;
+		$(".one").attr("state", action);
+		// two
+		// get existing attribute
+		state = $(".two").attr("state");
+		action = ( state && state.indexOf("slide-") > -1 ) ? "" : "slide-"+direction;
+		$(".two").attr("state", action);
+	});
+
+
+</script>
 
 
 </body>
